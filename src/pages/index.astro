@@ -2,45 +2,41 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Home">
+<Layout title="Home" description="Christmas Logistics LLC - Your trusted Amazon Delivery Service Partner in Denver, Colorado. We deliver smiles to doorsteps across the Denver metro area. Now hiring delivery drivers!">
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="container hero-content">
       <div class="hero-text">
         <span class="hero-badge">
-          <span class="badge-icon">🎅</span>
-          Trusted Since 2010
+          Amazon Delivery Service Partner
         </span>
-        <h1>Delivering Holiday <span class="highlight">Magic</span> Year-Round</h1>
+        <h1>Reliable Local Delivery Services</h1>
         <p>
-          Experience logistics with the warmth and reliability of Christmas morning.
-          We ensure every package arrives safely, on time, and with a touch of festive care.
+          Christmas Logistics is your trusted Amazon DSP serving the Denver metro area.
+          We deliver packages to doorsteps with care, speed, and a smile—every single day.
         </p>
         <div class="hero-cta">
-          <a href="/services" class="btn btn-primary">Explore Services</a>
+          <a href="/careers" class="btn btn-primary">Join Our Team</a>
           <a href="/about" class="btn btn-secondary">Learn More</a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-image">
-          <img src="/hero-truck.webp" alt="Christmas Logistics electric delivery van" loading="eager" />
+          <img src="/hero-truck.webp" alt="Christmas Logistics delivery van in Denver" loading="eager" />
         </div>
         <div class="hero-stats">
           <div class="hero-card">
-            <div class="card-icon">📦</div>
-            <div class="card-stat">99.8%</div>
-            <div class="card-label">On-Time Delivery</div>
+            <div class="card-stat">500K+</div>
+            <div class="card-label">Packages Delivered</div>
           </div>
           <div class="hero-card">
-            <div class="card-icon">🌍</div>
-            <div class="card-stat">50+</div>
-            <div class="card-label">Countries Served</div>
+            <div class="card-stat">85+</div>
+            <div class="card-label">Team Members</div>
           </div>
           <div class="hero-card">
-            <div class="card-icon">⭐</div>
-            <div class="card-stat">10M+</div>
-            <div class="card-label">Happy Deliveries</div>
+            <div class="card-stat">3+</div>
+            <div class="card-label">Years Serving Denver</div>
           </div>
         </div>
       </div>
@@ -48,144 +44,163 @@ import Layout from '../layouts/Layout.astro';
     <div class="hero-wave"></div>
   </section>
 
-  <!-- Features Section -->
-  <section class="section features">
+  <!-- Services Section -->
+  <section class="section services">
     <div class="container">
       <div class="section-header">
-        <h2>Why Choose <span class="text-red">Christmas</span> Logistics?</h2>
-        <p>We bring the spirit of giving to every delivery, ensuring your packages are treated with care and delivered with joy.</p>
+        <h2>What We Do</h2>
+        <p>We specialize in last-mile package delivery, bringing packages from Amazon fulfillment centers directly to homes and businesses across Denver.</p>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="service-card">
+          <div class="service-icon">📦</div>
+          <h3>Local Delivery</h3>
+          <p>Daily residential and commercial deliveries throughout the Denver metro area and surrounding communities.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🗺️</div>
+          <h3>Route Optimization</h3>
+          <p>Efficient routing powered by Amazon technology ensures faster delivery times and happy customers.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">👷</div>
+          <h3>Professional Drivers</h3>
+          <p>Trained, reliable team members who take pride in every delivery and treat packages with care.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Flexible Service</h3>
+          <p>Same-day and next-day delivery options to meet customer expectations, rain or shine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="section about-preview">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>Who We Are</h2>
+          <p>
+            Christmas Logistics is a locally-owned and operated Amazon Delivery Service Partner
+            proudly serving Denver and the surrounding communities. We're committed to safety,
+            speed, and customer satisfaction on every delivery.
+          </p>
+          <p>
+            With years of logistics experience and a dedicated team, we offer the reliability
+            of a large carrier with the personalized service of a local business. Our drivers
+            know your neighborhood because they're part of your community.
+          </p>
+          <a href="/about" class="btn btn-secondary">Learn More About Us</a>
+        </div>
+        <div class="about-values">
+          <div class="value-item">
+            <span class="value-icon">🛡️</span>
+            <div>
+              <strong>Safety First</strong>
+              <p>Every driver, every delivery, every day</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">🤝</span>
+            <div>
+              <strong>Local Ownership</strong>
+              <p>Invested in our Denver community</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">⭐</span>
+            <div>
+              <strong>Excellence</strong>
+              <p>We exceed expectations daily</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers Preview Section -->
+  <section class="section careers-preview">
+    <div class="container">
+      <div class="section-header light">
+        <h2>Join Our Team</h2>
+        <p>Looking for a place that feels like family? We're hiring motivated, reliable drivers who want meaningful work with great benefits.</p>
       </div>
 
       <div class="grid grid-3">
-        <div class="feature-card">
-          <div class="feature-icon">🚚</div>
-          <h3>Express Delivery</h3>
-          <p>Same-day and next-day delivery options to ensure your packages arrive when they need to, even during the busiest seasons.</p>
+        <div class="benefit-card">
+          <div class="benefit-icon">💰</div>
+          <h3>Competitive Pay</h3>
+          <p>Competitive hourly rate plus performance bonuses and overtime opportunities.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">📍</div>
-          <h3>Real-Time Tracking</h3>
-          <p>Follow your package's journey from pickup to delivery with our advanced GPS tracking and instant notifications.</p>
+        <div class="benefit-card">
+          <div class="benefit-icon">🏥</div>
+          <h3>Full Benefits</h3>
+          <p>Health, dental, vision insurance plus 401(k) and paid time off for full-time employees.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">🔒</div>
-          <h3>Secure Handling</h3>
-          <p>Your packages are precious to us. We use state-of-the-art security and careful handling for every shipment.</p>
+        <div class="benefit-card">
+          <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+          <h3>Family Culture</h3>
+          <p>Supportive, respectful team environment where every team member matters.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">🌿</div>
-          <h3>Eco-Friendly</h3>
-          <p>Our green fleet and sustainable practices mean your deliveries leave a smaller footprint on our planet.</p>
+        <div class="benefit-card">
+          <div class="benefit-icon">📈</div>
+          <h3>Growth Opportunities</h3>
+          <p>Advance to Lead Driver, Dispatcher, or Operations Manager. We promote from within.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">💰</div>
-          <h3>Competitive Pricing</h3>
-          <p>Quality logistics shouldn't break the bank. Enjoy transparent pricing with no hidden fees or surprises.</p>
+        <div class="benefit-card">
+          <div class="benefit-icon">🎓</div>
+          <h3>Paid Training</h3>
+          <p>No experience needed. We provide paid training and DOT certification.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">🎁</div>
-          <h3>Special Care</h3>
-          <p>Fragile items, gifts, and time-sensitive deliveries receive extra attention and premium handling.</p>
+        <div class="benefit-card">
+          <div class="benefit-icon">📅</div>
+          <h3>Work-Life Balance</h3>
+          <p>Flexible scheduling with 4 days per week. Predictable routes and schedules.</p>
         </div>
+      </div>
+
+      <div class="careers-cta">
+        <a href="/careers" class="btn btn-primary btn-large">Apply Now</a>
+        <p class="cta-note">No CDL required. Start your career today.</p>
       </div>
     </div>
   </section>
 
-  <!-- Stats Section -->
-  <section class="section stats">
+  <!-- Contact Section -->
+  <section class="section contact">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">15+</div>
-          <div class="stat-label">Years of Excellence</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">500+</div>
-          <div class="stat-label">Dedicated Staff</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">200+</div>
-          <div class="stat-label">Vehicles in Fleet</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">24/7</div>
-          <div class="stat-label">Customer Support</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Preview -->
-  <section class="section services-preview">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our <span class="text-green">Services</span></h2>
-        <p>Comprehensive logistics solutions tailored to meet your every need.</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card large">
-          <div class="service-content">
-            <span class="service-icon">✈️</span>
-            <h3>Air Freight</h3>
-            <p>Fast and reliable air cargo services for time-critical shipments across the globe.</p>
-            <a href="/services" class="service-link">Learn More →</a>
+      <div class="contact-content">
+        <div class="contact-text">
+          <h2>Get In Touch</h2>
+          <p>Have questions about careers or our services? We'd love to hear from you.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <a href="mailto:careers@christmaslogistics.com">careers@christmaslogistics.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <a href="tel:+13035551234">(303) 555-1234</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Denver, Colorado</span>
+            </div>
           </div>
         </div>
-
-        <div class="service-card">
-          <div class="service-content">
-            <span class="service-icon">🚛</span>
-            <h3>Ground Shipping</h3>
-            <p>Cost-effective overland transportation with extensive coverage.</p>
-            <a href="/services" class="service-link">Learn More →</a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-content">
-            <span class="service-icon">🚢</span>
-            <h3>Sea Freight</h3>
-            <p>Economical ocean shipping for large-volume cargo.</p>
-            <a href="/services" class="service-link">Learn More →</a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-content">
-            <span class="service-icon">🏭</span>
-            <h3>Warehousing</h3>
-            <p>Secure storage and inventory management solutions.</p>
-            <a href="/services" class="service-link">Learn More →</a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-content">
-            <span class="service-icon">📦</span>
-            <h3>Last Mile</h3>
-            <p>Final delivery services right to your customer's door.</p>
-            <a href="/services" class="service-link">Learn More →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="section cta">
-    <div class="container">
-      <div class="cta-content">
-        <div class="cta-text">
-          <h2>Ready to Ship with <span class="text-gold">Joy</span>?</h2>
-          <p>Join thousands of satisfied customers who trust Christmas Logistics for their shipping needs.</p>
-        </div>
-        <a href="/services" class="btn btn-gold">Get Started Today</a>
+        <a href="/careers" class="btn btn-gold">View Open Positions</a>
       </div>
     </div>
   </section>
@@ -199,7 +214,7 @@ import Layout from '../layouts/Layout.astro';
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--christmas-red) 0%, #8b1428 100%);
+    background: linear-gradient(135deg, var(--christmas-green) 0%, #0d3d24 100%);
   }
 
   .hero-bg {
@@ -220,26 +235,20 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-xs);
+    display: inline-block;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     padding: var(--space-xs) var(--space-md);
     border-radius: 50px;
     font-size: 0.9rem;
-    color: white;
+    color: var(--gold-light);
+    font-weight: 500;
     margin-bottom: var(--space-md);
   }
 
   .hero h1 {
     color: white;
     margin-bottom: var(--space-md);
-  }
-
-  .hero h1 .highlight {
-    color: var(--gold-light);
-    position: relative;
   }
 
   .hero p {
@@ -261,7 +270,7 @@ import Layout from '../layouts/Layout.astro';
 
   .hero .btn-secondary:hover {
     background: white;
-    color: var(--christmas-red);
+    color: var(--christmas-green);
   }
 
   .hero-visual {
@@ -298,32 +307,21 @@ import Layout from '../layouts/Layout.astro';
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    padding: var(--space-lg);
+    border-radius: 12px;
+    padding: var(--space-md);
     text-align: center;
     color: white;
-    transition: transform var(--transition-base);
-  }
-
-  .hero-card:hover {
-    transform: translateY(-5px);
-  }
-
-
-  .card-icon {
-    font-size: 2rem;
-    margin-bottom: var(--space-xs);
   }
 
   .card-stat {
     font-family: var(--font-display);
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
     color: var(--gold-light);
   }
 
   .card-label {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     opacity: 0.9;
   }
 
@@ -337,104 +335,18 @@ import Layout from '../layouts/Layout.astro';
     background-size: cover;
   }
 
-  /* Features Section */
-  .features {
+  /* Services Section */
+  .services {
     background: var(--snow-white);
-  }
-
-  .feature-card {
-    background: white;
-    border-radius: 16px;
-    padding: var(--space-xl);
-    text-align: center;
-    box-shadow: var(--shadow-md);
-    transition: all var(--transition-base);
-    border: 1px solid transparent;
-  }
-
-  .feature-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
-    border-color: var(--christmas-red);
-  }
-
-  .feature-icon {
-    font-size: 3rem;
-    margin-bottom: var(--space-md);
-    display: block;
-  }
-
-  .feature-card h3 {
-    margin-bottom: var(--space-sm);
-    color: var(--christmas-green);
-  }
-
-  .feature-card p {
-    color: #666;
-    font-size: 1rem;
-    margin: 0 auto;
-  }
-
-  /* Stats Section */
-  .stats {
-    background: linear-gradient(135deg, var(--christmas-green) 0%, #0d3d24 100%);
-    color: white;
-  }
-
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-lg);
-    text-align: center;
-  }
-
-  .stat-number {
-    font-family: var(--font-display);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 700;
-    color: var(--gold-light);
-    margin-bottom: var(--space-xs);
-  }
-
-  .stat-label {
-    font-size: 1rem;
-    opacity: 0.9;
-  }
-
-  /* Services Preview */
-  .services-preview {
-    background: var(--frost);
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: var(--space-md);
   }
 
   .service-card {
     background: white;
     border-radius: 16px;
     padding: var(--space-xl);
+    text-align: center;
     box-shadow: var(--shadow-md);
     transition: all var(--transition-base);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .service-card.large {
-    grid-row: 1 / -1;
-    background: linear-gradient(135deg, var(--christmas-red) 0%, #8b1428 100%);
-    color: white;
-  }
-
-  .service-card.large h3 {
-    color: white;
-  }
-
-  .service-card.large .service-link {
-    color: var(--gold-light);
   }
 
   .service-card:hover {
@@ -444,54 +356,174 @@ import Layout from '../layouts/Layout.astro';
 
   .service-icon {
     font-size: 2.5rem;
-    display: block;
     margin-bottom: var(--space-md);
   }
 
   .service-card h3 {
-    margin-bottom: var(--space-sm);
     color: var(--christmas-green);
+    margin-bottom: var(--space-sm);
+    font-size: 1.25rem;
   }
 
   .service-card p {
     color: #666;
     font-size: 0.95rem;
+    margin: 0;
+  }
+
+  /* About Preview */
+  .about-preview {
+    background: white;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+  }
+
+  .about-content h2 {
     margin-bottom: var(--space-md);
   }
 
-  .service-card.large p {
+  .about-content p {
+    color: #555;
+    margin-bottom: var(--space-md);
+  }
+
+  .about-values {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .value-item {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+    background: var(--frost);
+    padding: var(--space-md);
+    border-radius: 12px;
+  }
+
+  .value-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .value-item strong {
+    display: block;
+    color: var(--christmas-green);
+    margin-bottom: 4px;
+  }
+
+  .value-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  /* Careers Preview */
+  .careers-preview {
+    background: linear-gradient(135deg, var(--christmas-green) 0%, #0d3d24 100%);
+    color: white;
+  }
+
+  .section-header.light h2 {
+    color: white;
+  }
+
+  .section-header.light p {
     color: rgba(255, 255, 255, 0.9);
   }
 
-  .service-link {
-    font-weight: 600;
-    color: var(--christmas-red);
-    transition: all var(--transition-fast);
+  .benefit-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: var(--space-lg);
+    text-align: center;
   }
 
-  .service-link:hover {
-    gap: var(--space-sm);
+  .benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-sm);
   }
 
-  /* CTA Section */
-  .cta {
-    background: linear-gradient(135deg, var(--midnight) 0%, var(--charcoal) 100%);
+  .benefit-card h3 {
+    color: var(--gold-light);
+    margin-bottom: var(--space-xs);
+    font-size: 1.1rem;
   }
 
-  .cta-content {
+  .benefit-card p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .careers-cta {
+    text-align: center;
+    margin-top: var(--space-2xl);
+  }
+
+  .btn-large {
+    padding: var(--space-md) var(--space-2xl);
+    font-size: 1.1rem;
+  }
+
+  .cta-note {
+    margin-top: var(--space-sm);
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  /* Contact Section */
+  .contact {
+    background: var(--frost);
+  }
+
+  .contact-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--space-xl);
   }
 
-  .cta h2 {
-    color: white;
+  .contact-text h2 {
     margin-bottom: var(--space-sm);
   }
 
-  .cta p {
-    color: rgba(255, 255, 255, 0.8);
+  .contact-text > p {
+    color: #666;
+    margin-bottom: var(--space-lg);
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .contact-icon {
+    font-size: 1.25rem;
+  }
+
+  .contact-item a {
+    color: var(--christmas-green);
+    font-weight: 500;
+  }
+
+  .contact-item a:hover {
+    text-decoration: underline;
   }
 
   /* Responsive */
@@ -510,25 +542,17 @@ import Layout from '../layouts/Layout.astro';
       margin: 0 auto;
     }
 
-    .hero-stats {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .stats-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .services-grid {
+    .about-grid {
       grid-template-columns: 1fr;
     }
 
-    .service-card.large {
-      grid-row: auto;
-    }
-
-    .cta-content {
+    .contact-content {
       flex-direction: column;
       text-align: center;
+    }
+
+    .contact-info {
+      align-items: center;
     }
   }
 
@@ -538,7 +562,7 @@ import Layout from '../layouts/Layout.astro';
       padding: var(--space-2xl) 0;
     }
 
-    .stats-grid {
+    .hero-stats {
       grid-template-columns: 1fr;
     }
   }

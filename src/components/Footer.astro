@@ -5,14 +5,14 @@ const quickLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About Us' },
   { href: '/services', label: 'Services' },
-  { href: '/fleet', label: 'Our Fleet' },
+  { href: '/careers', label: 'Careers' },
 ];
 
-const services = [
-  { href: '/services#express', label: 'Express Delivery' },
-  { href: '/services#freight', label: 'Freight Services' },
-  { href: '/services#warehouse', label: 'Warehousing' },
-  { href: '/services#tracking', label: 'Real-Time Tracking' },
+const careers = [
+  { href: '/careers', label: 'Delivery Driver Jobs' },
+  { href: '/careers#apply', label: 'Apply Now' },
+  { href: '/about', label: 'Our Team' },
+  { href: '/services', label: 'What We Do' },
 ];
 ---
 
@@ -23,23 +23,19 @@ const services = [
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" class="footer-logo">
-          <span class="logo-icon">🎄</span>
+          <span class="logo-icon">🚐</span>
           <span class="logo-text">
             <span class="logo-main">Christmas</span>
             <span class="logo-sub">Logistics</span>
           </span>
         </a>
         <p class="footer-tagline">
-          Delivering joy and packages with the magic of the season.
-          Your trusted partner for reliable, festive logistics solutions.
+          Your trusted Amazon Delivery Service Partner serving Denver, Colorado.
+          We deliver packages with care, speed, and a smile—every single day.
         </p>
-        <div class="footer-ornaments">
-          <span class="ornament"></span>
-          <span class="ornament gold"></span>
-          <span class="ornament green"></span>
-          <span class="ornament"></span>
-          <span class="ornament gold"></span>
-        </div>
+        <p class="footer-dsp">
+          Proud Amazon DSP
+        </p>
       </div>
 
       <div class="footer-links">
@@ -52,40 +48,40 @@ const services = [
       </div>
 
       <div class="footer-links">
-        <h4>Services</h4>
+        <h4>Careers</h4>
         <ul>
-          {services.map(link => (
+          {careers.map(link => (
             <li><a href={link.href}>{link.label}</a></li>
           ))}
         </ul>
       </div>
 
       <div class="footer-info">
-        <h4>Business Hours</h4>
-        <ul class="hours-list">
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
           <li>
-            <span>Monday - Friday</span>
-            <span>8:00 AM - 8:00 PM</span>
+            <span class="contact-icon">📧</span>
+            <a href="mailto:careers@christmaslogistics.com">careers@christmaslogistics.com</a>
           </li>
           <li>
-            <span>Saturday</span>
-            <span>9:00 AM - 5:00 PM</span>
+            <span class="contact-icon">📞</span>
+            <a href="tel:+13035551234">(303) 555-1234</a>
           </li>
           <li>
-            <span>Sunday</span>
-            <span>10:00 AM - 4:00 PM</span>
+            <span class="contact-icon">📍</span>
+            <span>Denver, Colorado</span>
           </li>
         </ul>
-        <p class="holiday-note">
-          <span class="sparkle">✨</span> Extended holiday hours in December!
-        </p>
+        <a href="/careers" class="footer-cta">
+          We're Hiring! Apply Today →
+        </a>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {currentYear} Christmas Logistics. All rights reserved.</p>
-      <p class="made-with">
-        Made with <span class="heart">❤️</span> and holiday spirit
+      <p>&copy; {currentYear} Christmas Logistics LLC. All rights reserved.</p>
+      <p class="footer-note">
+        Amazon Delivery Service Partner
       </p>
     </div>
   </div>
@@ -155,9 +151,13 @@ const services = [
     margin-bottom: var(--space-md);
   }
 
-  .footer-ornaments {
-    display: flex;
-    gap: var(--space-sm);
+  .footer-dsp {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--gold-light);
   }
 
   .footer-links h4,
@@ -187,32 +187,47 @@ const services = [
     transform: translateX(5px);
   }
 
-  .hours-list {
+  .contact-list {
     list-style: none;
   }
 
-  .hours-list li {
+  .contact-list li {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-sm);
     padding: var(--space-xs) 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);
   }
 
-  .holiday-note {
+  .contact-icon {
+    font-size: 1rem;
+  }
+
+  .contact-list a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color var(--transition-fast);
+  }
+
+  .contact-list a:hover {
+    color: white;
+  }
+
+  .footer-cta {
+    display: inline-block;
     margin-top: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--christmas-red);
+    color: white;
+    border-radius: 8px;
     font-size: 0.9rem;
-    color: var(--gold-light);
+    font-weight: 600;
+    transition: all var(--transition-fast);
   }
 
-  .sparkle {
-    animation: sparkle 1.5s ease-in-out infinite;
-  }
-
-  @keyframes sparkle {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+  .footer-cta:hover {
+    background: var(--christmas-red-dark);
+    transform: translateY(-2px);
   }
 
   .footer-bottom {
@@ -224,19 +239,9 @@ const services = [
     color: rgba(255, 255, 255, 0.6);
   }
 
-  .made-with {
-    display: flex;
-    align-items: center;
-    gap: var(--space-xs);
-  }
-
-  .heart {
-    animation: heartbeat 1s ease-in-out infinite;
-  }
-
-  @keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
+  .footer-note {
+    font-size: 0.85rem;
+    opacity: 0.7;
   }
 
   @media (max-width: 968px) {
