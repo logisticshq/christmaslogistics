@@ -1,0 +1,545 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">
+          <span class="badge-icon">🎅</span>
+          Trusted Since 2010
+        </span>
+        <h1>Delivering Holiday <span class="highlight">Magic</span> Year-Round</h1>
+        <p>
+          Experience logistics with the warmth and reliability of Christmas morning.
+          We ensure every package arrives safely, on time, and with a touch of festive care.
+        </p>
+        <div class="hero-cta">
+          <a href="/services" class="btn btn-primary">Explore Services</a>
+          <a href="/about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img src="/hero-truck.webp" alt="Christmas Logistics electric delivery van" loading="eager" />
+        </div>
+        <div class="hero-stats">
+          <div class="hero-card">
+            <div class="card-icon">📦</div>
+            <div class="card-stat">99.8%</div>
+            <div class="card-label">On-Time Delivery</div>
+          </div>
+          <div class="hero-card">
+            <div class="card-icon">🌍</div>
+            <div class="card-stat">50+</div>
+            <div class="card-label">Countries Served</div>
+          </div>
+          <div class="hero-card">
+            <div class="card-icon">⭐</div>
+            <div class="card-stat">10M+</div>
+            <div class="card-label">Happy Deliveries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave"></div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose <span class="text-red">Christmas</span> Logistics?</h2>
+        <p>We bring the spirit of giving to every delivery, ensuring your packages are treated with care and delivered with joy.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h3>Express Delivery</h3>
+          <p>Same-day and next-day delivery options to ensure your packages arrive when they need to, even during the busiest seasons.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📍</div>
+          <h3>Real-Time Tracking</h3>
+          <p>Follow your package's journey from pickup to delivery with our advanced GPS tracking and instant notifications.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure Handling</h3>
+          <p>Your packages are precious to us. We use state-of-the-art security and careful handling for every shipment.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌿</div>
+          <h3>Eco-Friendly</h3>
+          <p>Our green fleet and sustainable practices mean your deliveries leave a smaller footprint on our planet.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>Competitive Pricing</h3>
+          <p>Quality logistics shouldn't break the bank. Enjoy transparent pricing with no hidden fees or surprises.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎁</div>
+          <h3>Special Care</h3>
+          <p>Fragile items, gifts, and time-sensitive deliveries receive extra attention and premium handling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Dedicated Staff</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Vehicles in Fleet</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Customer Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="section services-preview">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our <span class="text-green">Services</span></h2>
+        <p>Comprehensive logistics solutions tailored to meet your every need.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card large">
+          <div class="service-content">
+            <span class="service-icon">✈️</span>
+            <h3>Air Freight</h3>
+            <p>Fast and reliable air cargo services for time-critical shipments across the globe.</p>
+            <a href="/services" class="service-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-content">
+            <span class="service-icon">🚛</span>
+            <h3>Ground Shipping</h3>
+            <p>Cost-effective overland transportation with extensive coverage.</p>
+            <a href="/services" class="service-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-content">
+            <span class="service-icon">🚢</span>
+            <h3>Sea Freight</h3>
+            <p>Economical ocean shipping for large-volume cargo.</p>
+            <a href="/services" class="service-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-content">
+            <span class="service-icon">🏭</span>
+            <h3>Warehousing</h3>
+            <p>Secure storage and inventory management solutions.</p>
+            <a href="/services" class="service-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-content">
+            <span class="service-icon">📦</span>
+            <h3>Last Mile</h3>
+            <p>Final delivery services right to your customer's door.</p>
+            <a href="/services" class="service-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-text">
+          <h2>Ready to Ship with <span class="text-gold">Joy</span>?</h2>
+          <p>Join thousands of satisfied customers who trust Christmas Logistics for their shipping needs.</p>
+        </div>
+        <a href="/services" class="btn btn-gold">Get Started Today</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--christmas-red) 0%, #8b1428 100%);
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 40%);
+  }
+
+  .hero-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+    padding: var(--space-3xl) 0;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: var(--space-md);
+  }
+
+  .hero h1 {
+    color: white;
+    margin-bottom: var(--space-md);
+  }
+
+  .hero h1 .highlight {
+    color: var(--gold-light);
+    position: relative;
+  }
+
+  .hero p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  .hero .btn-secondary {
+    border-color: white;
+    color: white;
+  }
+
+  .hero .btn-secondary:hover {
+    background: white;
+    color: var(--christmas-red);
+  }
+
+  .hero-visual {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .hero-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl), 0 20px 60px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+  }
+
+  .hero-image:hover img {
+    transform: scale(1.02);
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+
+  .hero-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: var(--space-lg);
+    text-align: center;
+    color: white;
+    transition: transform var(--transition-base);
+  }
+
+  .hero-card:hover {
+    transform: translateY(-5px);
+  }
+
+
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-xs);
+  }
+
+  .card-stat {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold-light);
+  }
+
+  .card-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+
+  .hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 80'%3E%3Cpath fill='%23fafafa' d='M0,80 L0,40 Q300,80 600,40 T1200,40 L1200,80 Z'/%3E%3C/svg%3E");
+    background-size: cover;
+  }
+
+  /* Features Section */
+  .features {
+    background: var(--snow-white);
+  }
+
+  .feature-card {
+    background: white;
+    border-radius: 16px;
+    padding: var(--space-xl);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    border: 1px solid transparent;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--christmas-red);
+  }
+
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+    display: block;
+  }
+
+  .feature-card h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--christmas-green);
+  }
+
+  .feature-card p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  /* Stats Section */
+  .stats {
+    background: linear-gradient(135deg, var(--christmas-green) 0%, #0d3d24 100%);
+    color: white;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: var(--space-xs);
+  }
+
+  .stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+
+  /* Services Preview */
+  .services-preview {
+    background: var(--frost);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .service-card {
+    background: white;
+    border-radius: 16px;
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card.large {
+    grid-row: 1 / -1;
+    background: linear-gradient(135deg, var(--christmas-red) 0%, #8b1428 100%);
+    color: white;
+  }
+
+  .service-card.large h3 {
+    color: white;
+  }
+
+  .service-card.large .service-link {
+    color: var(--gold-light);
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: var(--space-md);
+  }
+
+  .service-card h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--christmas-green);
+  }
+
+  .service-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .service-card.large p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .service-link {
+    font-weight: 600;
+    color: var(--christmas-red);
+    transition: all var(--transition-fast);
+  }
+
+  .service-link:hover {
+    gap: var(--space-sm);
+  }
+
+  /* CTA Section */
+  .cta {
+    background: linear-gradient(135deg, var(--midnight) 0%, var(--charcoal) 100%);
+  }
+
+  .cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+  }
+
+  .cta h2 {
+    color: white;
+    margin-bottom: var(--space-sm);
+  }
+
+  .cta p {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* Responsive */
+  @media (max-width: 968px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .hero-cta {
+      justify-content: center;
+    }
+
+    .hero-visual {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .hero-stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .service-card.large {
+      grid-row: auto;
+    }
+
+    .cta-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero {
+      min-height: auto;
+      padding: var(--space-2xl) 0;
+    }
+
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
